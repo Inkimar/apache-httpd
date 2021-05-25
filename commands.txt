@@ -1,0 +1,25 @@
+docker exec -it apache_apache_1 bash
+
+docker cp apache_apache_1:/usr/local/apache2/conf/httpd.conf .
+
+
+root@53ae3e5fa354:/usr/local/apache2# pwd
+/usr/local/apache2
+root@53ae3e5fa354:/usr/local/apache2# ls -ali
+total 56
+2401097 drwxr-xr-x 1 www-data www-data 4096 May 12 07:49 .
+2401167 drwxr-xr-x 1 root     root     4096 May 12 07:45 ..
+2401098 drwxr-xr-x 2 root     root     4096 May 12 07:49 bin
+2401099 drwxr-xr-x 2 root     root     4096 May 12 07:49 build
+2401100 drwxr-xr-x 2 root     root     4096 May 12 07:49 cgi-bin
+2401101 drwxr-xr-x 4 root     root     4096 May 12 07:49 conf
+2401105 drwxr-xr-x 3 root     root     4096 May 12 07:49 error
+ 524290 drwxrwxr-x 2     1000     1000 4096 May 21 20:51 htdocs
+2401108 drwxr-xr-x 3 root     root     4096 May 12 07:49 icons
+2401110 drwxr-xr-x 2 root     root     4096 May 12 07:49 include
+2401111 drwxr-xr-x 1 root     root     4096 May 21 20:54 logs
+2401112 drwxr-xr-x 2 root     root     4096 May 12 07:49 modules
+
+
+
+https://hub.docker.com/_/httpd
